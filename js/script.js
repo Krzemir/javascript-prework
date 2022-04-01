@@ -49,5 +49,5 @@ if( computerMove == 'kamień' && playerMove == 'papier'){
     } else if ( computerMove == 'nożyce' && playerMove == 'nożyce'){
     printMessage('Remis!');
     } else {
-    printMessage ('Partia nierozegrana, wpisano niewłaściwą wartość')
+    printMessage ('Partia nierozegrana, wpisano niewłaściwą wartość');
     }
