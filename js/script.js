@@ -1,3 +1,5 @@
+
+
 function playGame(playerInput){
   clearMessages();
 
@@ -13,6 +15,7 @@ function playGame(playerInput){
         return 'nieznany ruch';
       }
     }
+
 
   let randomNumber = Math.floor(Math.random() * 3 + 1);
 
@@ -52,6 +55,7 @@ function playGame(playerInput){
           ||(argComputerMove == 'papier' && argPlayerMove == 'kamień')
           ||(argComputerMove == 'nożyce' && argPlayerMove == 'kamień')){
           printMessage('Ty wygrywasz!');
+          playerScore++;
           }else if(( argComputerMove == 'kamień' && argPlayerMove == 'kamień')
           ||( argComputerMove == 'papier' && argPlayerMove == 'papier')
           ||( argComputerMove == 'nożyce' && argPlayerMove == 'nożyce'))
@@ -62,13 +66,15 @@ function playGame(playerInput){
           ||(argComputerMove == 'nożyce' && argPlayerMove == 'papier'))
           {
           printMessage('Ja wygrywam!');
+          computerScore++;
           }else {
           printMessage ('Partia nierozegrana, wpisano niewłaściwą wartość');
           }
-          
-  }
+      }
 
   displayResult(playerMove,computerMove)
+  printMessageWins ('Twój wynik: ' + playerScore);
+  printMessageWins ('Mój wynik: ' + computerScore);
 }
 
 
@@ -81,4 +87,16 @@ document.getElementById('play-paper').addEventListener('click', function(){
 document.getElementById('play-scissors').addEventListener('click', function(){
   playGame(3);
 });
+
+//Results of entire game:
+
+
+let playerScore = 0;
+let computerScore = 0;
+
+
+
+
+
+
 

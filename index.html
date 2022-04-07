@@ -3,17 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<div id="buttons">
-			<button id="play-rock">Kamień</button>
-			<button id="play-paper">Papier</button>
-			<button id="play-scissors">Nożyce</button>
-		</div>
-		<div id="messages"></div>
+		<h1>Czy masz dziś szczęście?</h1>
+		<h2>Zagraj w naszą grę</h2>
+		<h3>Wybierz swój ruch</h3>
 	</div>
+	<div class="container">
+	<div id="buttons">
+		<button id="play-rock" type="button"><span>Kamień</span><i class="fa-solid fa-hand-fist"></i></button>
+		<button id="play-paper" type="button"><span>Papier</span><i class="fa-solid fa-hand"></i></button>
+		<button id="play-scissors" type="button"><span>Nożyce</span><i class="fa-solid fa-hand-scissors"></i></button>
+	</div>
+	<div id="messages"></div>
+	<div id="result"></div>
+</div>
+
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>

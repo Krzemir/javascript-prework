@@ -5,5 +5,12 @@ function printMessage(msg){
 }
 
 function clearMessages(){
-	document.getElementById('messages').innerHTML = '';
+	document.querySelector('#messages').innerHTML = '';
+	document.querySelector('#result').innerHTML = '';
+}
+
+function printMessageWins (msg){
+	let div = document.createElement('div');
+	div.innerHTML = msg;
+	document.getElementById('result').appendChild(div);
 }

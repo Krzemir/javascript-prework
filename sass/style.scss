@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+      color:antiquewhite;
+      background-color: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+
+
+
+.container {
+  
+text-align: center;
+ }
+
+button {
+    padding:0;
+    background-color:black;
+    margin: 20px;
+    transition: all .5s;
+    cursor: pointer;
+    border: none;
+
+}
+
+button:hover {
+    transform: scale(1.5);
+}
+
+i {
+    font-size: 5em;
+    color:antiquewhite;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#messages, #result {
+    color:rgb(204, 183, 183);
+    font-size: 30px;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+#result {
+    font-size: 36px;
+}
