@@ -1,4 +1,4 @@
-
+{
 
 function playGame(playerInput){
   clearMessages();
@@ -93,10 +93,4 @@ document.getElementById('play-scissors').addEventListener('click', function(){
 
 let playerScore = 0;
 let computerScore = 0;
-
-
-
-
-
-
-
+}
