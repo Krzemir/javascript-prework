@@ -3,7 +3,7 @@
   function playGame(playerInput){
     clearMessages();
 
-    function getMoveName(argMoveId){
+    const getMoveName = function(argMoveId){
         if(argMoveId == 1){
           return 'kamień';
         } else if(argMoveId == 2) {
@@ -19,14 +19,9 @@
     const computerMove = getMoveName(Math.floor(Math.random() * 3 + 1));
     const playerMove = getMoveName(playerInput);  
     printMessage('Mój ruch to: ' + computerMove);
-
-  // console.log('Gracz wpisał: ' + playerInput);
-
-    
-
     printMessage('Twój ruch to: ' + playerMove);
 
-    function displayResult(argComputerMove, argPlayerMove){
+    const displayResult = function (argComputerMove, argPlayerMove){
         if ((argComputerMove == 'kamień' && argPlayerMove == 'papier')
             ||(argComputerMove == 'papier' && argPlayerMove == 'kamień')
             ||(argComputerMove == 'nożyce' && argPlayerMove == 'kamień')){
